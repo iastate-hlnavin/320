@@ -1,0 +1,7 @@
+<script>
+a = true
+b = false
+c = true
+x = (!a && b) || !c
+alert(x)
+</script>
