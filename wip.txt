@@ -1,0 +1,12 @@
+lowBound = 1
+upBound = 100
+guess = (upBound + lowBound) / 2
+alert ("Let's play a guessing game! Think of a number between 1 and 100. If the number is more than the guessed number, enter >. If the number is less than the guessed number, enter <. When the number is correct, enter yes.")
+	while (num == false)
+		if (  == "<")
+		{upBound = 50}
+		if (num == ">")
+		{lowBound = 50}
+		else alert ("Win!")
+		
+(lower + upper)/2

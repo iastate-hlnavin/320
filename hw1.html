@@ -1,14 +1,17 @@
 <script>
-lowBound = 1
-upBound = 100
-num = false
-guess = 50
-alert ("Let's play a guessing game! Think of a number between 1 and 100. If the number is more than the guessed number, enter >. If the number is less than the guessed number, enter <.")
-alert ("Is your number" num "?")
-	while (num == false)
-		if (  == "<")
-		{upBound = 50}
-		if (num == ">")
-		{lowBound = 50}
-		else alert ("Win!")
+lower = 1
+upper = 100
+game=true
+while (game) {
+	guess = (lower+upper)/2
+	guess = parseInt(guess)
+	response = prompt ("Is your number " +guess+ "?")
+	if (response=="yes")
+		{game=false}
+	if (response=="<")
+		{}
+	if (response==">")
+		{}
+}
+alert ("I won!")
 </script>
