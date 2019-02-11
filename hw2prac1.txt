@@ -1,0 +1,4 @@
+<script>
+prompt("Enter a positive or negative number.")
+prompt("Input text.")
+</script>
