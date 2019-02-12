@@ -1,0 +1,14 @@
+<script src="https://linguatorium.com/tools/static/320/tau.js"></script>
+<script src="https://linguatorium.com/tools/static/320/grammar.js"></script>
+<script>
+  rule("S --> NP VP")
+  rule("NP --> DET N")
+  rule("VP --> VT NP")
+  rule("VP --> VN NP")
+  rule("N --> boy")
+  rule("N --> ball")
+  rule("VT --> hit")
+  rule("VN --> ran")
+  rule("DET --> the")
+  run()
+</script>
