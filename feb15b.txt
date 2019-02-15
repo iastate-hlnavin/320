@@ -1,0 +1,27 @@
+<script>
+students =
+[
+	{
+	netid: "alyrose",
+	name: "Alyssa Jennings",
+	grade: "A+",
+	gender: "f"
+	},
+	{
+	netid: "evgeny",
+	name: 'Evgeny Mikahaylovich Chukharev-Hudilainen",
+	grade: "D+",
+	gender: "m"
+	},
+	{
+	netid: "mmiller3",
+	name: "Daisy Miller",
+	grade: "A+",
+	gender: "f"
+	}
+]
+for (i=0; i<students.length; i++)
+{
+	alert("Dear " + students[i].name ", your grade is " + students[i].grade".")
+}
+</script>
