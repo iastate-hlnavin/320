@@ -26,7 +26,8 @@ function process()
 		{word_misspelled = false}
 	}
     if (word_misspelled)
-		{y = y + "You have misspelled the word "+current_word+"\n"} //suggest word here with "Did you mean " +correct_word+ "?"
+	
+		{y = y + "You have misspelled the word "+current_word+ ". Did you mean " +correct_word+ "?"}
 
 	}
 	if (y.length == 0)
