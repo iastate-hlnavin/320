@@ -1,16 +1,23 @@
 <script>
-students =
+student =
 	[{netid: "alyrose",
 	name: "Alyssa Jennings",
-	grade: "A+",},
+	grade: "A+",
+	gender: "f"},
 	{netid: "evgeny",
-	name: 'Evgeny Mikahaylovich Chukharev-Hudilainen",
-	grade: "D+",},
+	name: "Evgeny Mikahaylovich Chukharev-Hudilainen",
+	grade: "D+",
+	gender: "m"},
 	{netid: "mmiller3",
 	name: "Daisy Miller",
-	grade: "A+",}]
+	grade: "A+",
+	gender: "f"}]
 for (i=0; i<students.length; i++)
+name = student[i]name.split(" ")
+last_name = name[name.length-1]
+if (student.gender === "f") salutation = "Ms."
+	else salutation = "Mr."
 {
-	alert("Dear " + students[i].name ", your grade is " + students[i].grade ".")
+	alert("Dear " saluation + student[i].name ", your grade is " + student[i].grade ".")
 }
 </script>
