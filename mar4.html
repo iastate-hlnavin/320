@@ -1,3 +1,4 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 <body>
 Title: <input type="text"><br>
 Author: <input type="text"><br>
@@ -84,5 +85,20 @@ Genre: "Fiction"
 Series: null
 Language: "English"
 }]
+$('#search').click(function() {
+  author = $('#author').val()
+  title = $('#title').val()
+  search_results = ''
+  for (i=0; i<books.length; i++) {
+    if (
+	(author.length === 0 || books[i].author.toUpperCase().indexOf(author.toUpperCase()) >= 0) &&
+    (title.length === 0 || books[i].title.toUpperCase().indexOf(title.toUpperCase()) >= 0)
+    )
+	{
+	search_results += JSON.stringify(books[i])
+    }
+  }
+  $('#div').html(search_results)
+})
 </script>
 </body>

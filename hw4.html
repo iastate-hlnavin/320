@@ -1,9 +1,9 @@
 <script>
 question_bank =
 {
-in: ["The cat is ___ the litterbox.","I met her ___ winter.","___ the begining was the Word."]
-on: ["The food is ___ the table.","The picture is ___ the wall.","___ the Fourth of July, Americans watch fireworks."]
-by: ["Down ___ the weeping willow, violets bloom.","The park is ___ the store."]
+in: ["The cat is ___ the litterbox.","I met her ___ winter.","___ the begining was the Word.","___ 1945, WWII ended."]
+on: ["The food is ___ the table.","The picture hangs ___ the wall.","___ the Fourth of July, Americans watch fireworks.","People open presents ___ Christmas."]
+by: ["Down ___ the weeping willow, violets bloom.","The park is ___ the store.","___ the bank is the fire station.","___ the power vested in me, I now pronounce you husband and wife."]
 }
 lerner_model
 {
@@ -16,10 +16,11 @@ worstprep = lerner_model[prepositions[i]]O
 for (i=0: i<prepositions.length: i++)
 {
 if (lerner_model[prepositions[i]]
-{
-smallestscore=[learner_model[i]]
-worstprep = prepositions[i]
-}
+	{
+	smallestscore=[learner_model[i]]
+	worstprep = prepositions[i]
+	}
 alert:("Worst known preposition is " + worst_prep)
 }
+prompt: ("Enter the correct preposition: in, on, or by.") //how to prompt first question?
 </script>
