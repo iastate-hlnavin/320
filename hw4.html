@@ -5,6 +5,12 @@ in: ["The cat is ___ the litterbox.","I met her ___ winter.","___ the begining w
 on: ["The food is ___ the table.","The picture hangs ___ the wall.","___ the Fourth of July, Americans watch fireworks.","People open presents ___ Christmas."]
 by: ["Down ___ the weeping willow, violets bloom.","The park is ___ the store.","Stand ___ me.","___ the power vested in me, I now pronounce you husband and wife."]
 }
+answer_bank =
+{
+in: ["The cat is in the litterbox.","I met her in winter.","I the begining was the Word.","In 1945, WWII ended."]
+on: ["The food is on the table.","The picture hangs on the wall.","On the Fourth of July, Americans watch fireworks.","People open presents on Christmas."]
+by: ["Down by the weeping willow, violets bloom.","The park is by the store.","Stand by me.","By the power vested in me, I now pronounce you husband and wife."]
+}
 lerner_model
 {
 in:0, on:0, by:0
@@ -12,7 +18,7 @@ in:0, on:0, by:0
 prepositions = ["in", "on", "by"]
 while (true)
 smallestscore = lerner_model[0]]
-worstprep = lerner_model[prepositions[i]]O
+worstprep = lerner_model[prepositions[i]]
 for (i=0: i<prepositions.length: i++)
 {
 if (lerner_model[prepositions[i]]
